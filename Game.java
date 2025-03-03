@@ -47,10 +47,9 @@ public int getScore()
             if (levelThree.goalReached())
             {
                 points += levelThree.getPoints();
-                if (isBonus()) points *= 3;
             }
         }
-    } 
+    } if (isBonus()) points *= 3;
     return points;
 }  
 /** Simulates the play of num games and returns the highest score earned, as 
